@@ -1,0 +1,259 @@
+@import url('node_modules/@fortawesome/fontawesome-free/css/all.min.css');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Telo stranice */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Main container */
+  .main-container {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .page-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-image {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #4fd1c5;
+  }
+  
+  /* Main Content */
+  .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Section */
+  .section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 20px 0 10px;
+    color: #4fd1c5;
+  }
+  
+  /* Form */
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .form-group {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Da stavimo dugme iznad polja */
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 0.875rem;
+    margin-right: 10px; /* Dodaje razmak između label i input */
+    color: #555;
+  }
+  
+  .form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc; /* Svetlija siva boja za ivice */
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9f9f9; /* Svetla pozadina */
+  color: #333333; /* Tamniji tekst */
+}
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #4fd1c5;
+  outline: none;
+  background-color: #ffffff;
+}
+  
+.form-group button.edit-btn {
+    align-self: flex-end; /* Dugme ide desno */
+    margin-bottom: 5px; /* Razmak između dugmeta i polja */
+    background: transparent;
+    border: none;
+    color: #4fd1c5;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+  .form-group button.edit-btn i {
+    font-size: 1.25rem; /* Veličina ikone */
+  }
+  
+  .form-group button.edit-btn:hover {
+    color: #3b82f6; /* Boja na hover */
+  }
+  
+  
+  .change-access-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4fd1c5;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .change-access-btn:hover {
+    background-color: #3b82f6;
+  }
+  
+  /* Checkboxes */
+  .checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    height: 18px;
+    width: 18px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  /* Subscription Section */
+  .subscription-grid {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .subscription-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .subscription-card h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .subscription-card p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #4fd1c5;
+    margin-bottom: 20px;
+  }
+  
+  .subscription-card ul {
+    list-style: none;
+    text-align: left;
+    margin: 10px 0;
+    padding: 0;
+  }
+  
+  .subscription-card ul li {
+    margin: 5px 0;
+    font-size: 0.875rem;
+    color: #555;
+  }
+  
+  .status-btn,
+  .book-btn,
+  .contact-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 0.875rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .status-btn {
+    background-color: #4fd1c5;
+    color: white;
+  }
+  
+  .book-btn {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  .contact-btn {
+    background-color: #e2e8f0;
+    color: #555;
+  }
+  
+  .status-btn:hover {
+    background-color: #319795;
+  }
+  
+  .book-btn:hover {
+    background-color: #2563eb;
+  }
+  
+  .contact-btn:hover {
+    background-color: #cbd5e1;
+  }
+  
